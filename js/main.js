@@ -32,5 +32,5 @@ var u, fav, misFavs;
 
 $('document').ready(function() {
     Marvel.vg = new Marvel.Views.VistaGlobal();
-    Marvel.vg.showChildView('formBusqueda',new Marvel.Views.VistaBuscarComics());
+    Marvel.vg.getRegion('formBusqueda').show(new Marvel.Views.VistaBuscarComics());
 });

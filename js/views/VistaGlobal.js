@@ -14,7 +14,7 @@ Marvel.Views = Marvel.Views || {};
         childEvents: {
             'completed:search' : function(child, col) {
                 console.log(col);
-                this.showChildView('listado', new Marvel.Views.VistaComics({
+                this.getRegion('listado').show(new Marvel.Views.VistaComics({
                     collection: col
                 }))
             },
