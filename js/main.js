@@ -33,15 +33,4 @@ var u, fav, misFavs;
 $('document').ready(function() {
     Marvel.vg = new Marvel.Views.VistaGlobal();
     Marvel.vg.showChildView('formBusqueda',new Marvel.Views.VistaBuscarComics());
-
-    u = new Marvel.Models.Usuario({username:"experto", password:"experto"});
-    //u.fetch();
-    fav = new Marvel.Models.Favorito({comicId:1});
-    misFavs = new Marvel.Collections.Favoritos([fav]);
-    /*
-    var acl = {}
-    acl[u.id] = {read:true, write:true};
-    fav.ACL = acl;
-    */
-
 });
